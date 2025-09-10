@@ -1,8 +1,11 @@
 {
-  "name": "node-ble",
-  "description": "Bluetooth Low Energy (BLE) library written with pure Node.js (no bindings) - baked by Bluez via DBus",
-  "version": "1.13.0",
-  "repository": "https://github.com/chrvadala/node-ble.git",
+  "name": "@naugehyde/node-ble",
+  "description": "Bluetooth Low Energy (BLE) library written with pure Node.js (no bindings) - baked by Bluez via DBus with @JellyBrick fixes to Dbus-next" ,
+  "version": "1.13.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naugehyde/node-ble.git"
+  },
   "author": "chrvadala",
   "license": "MIT",
   "main": "./src/index.js",
@@ -23,7 +26,7 @@
     "bluetooth",
     "bluetooth-le"
   ],
-  "homepage": "https://github.com/chrvadala/node-ble",
+  "homepage": "https://github.com/naugehyde/node-ble",
   "scripts": {
     "build": "npm run docs:api",
     "test": "npm run test:standard && npm run test:coverage && npm run test:typescript",
@@ -35,7 +38,7 @@
     "docs:api": "jsdoc2md --template docs/templates/api.hbs --example-lang js --heading-depth 2 src/*.js > docs/api.md"
   },
   "dependencies": {
-    "dbus-next": "^0.10.2"
+    "@JellyBrick/dbus-next":"^0.10.3"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
@@ -53,5 +56,14 @@
       "test/__interfaces/*.js"
     ]
   },
-  "funding": "https://github.com/sponsors/chrvadala"
+  "funding": {
+    "url": "https://github.com/sponsors/chrvadala"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "bugs": {
+    "url": "https://github.com/naugehyde/node-ble/issues"
+  }
 }
