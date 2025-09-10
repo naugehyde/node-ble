@@ -1,4 +1,4 @@
-const { systemBus: createSystemBus } = require('dbus-next')
+const { systemBus: createSystemBus } = require('@jellybrick/dbus-next')
 const Bluetooth = require('./Bluetooth')
 
 /**

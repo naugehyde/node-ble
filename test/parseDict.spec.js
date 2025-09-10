@@ -1,6 +1,6 @@
 /* global test, expect */
 
-const { Variant } = require('dbus-next')
+const { Variant } = require('@jellybrick/dbus-next')
 const parseDict = require('../src/parseDict.js')
 
 test('parseDict', () => {

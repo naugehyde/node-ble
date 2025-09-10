@@ -4,7 +4,7 @@ const TEST_NAME = 'org.test'
 const TEST_OBJECT = '/org/example'
 const TEST_IFACE = 'org.test.iface'
 
-const { systemBus: createSystemBus } = require('dbus-next')
+const { systemBus: createSystemBus } = require('@jellybrick/dbus-next')
 const BusHelper = require('../src/BusHelper')
 const TestInterface = require('./__interfaces/TestInterface')
 const buildTypedValue = require('../src/buildTypedValue')

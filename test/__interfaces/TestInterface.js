@@ -1,4 +1,4 @@
-const {Variant, interface: {Interface, property, method, ACCESS_READWRITE}} = require('dbus-next');
+const {Variant, interface: {Interface, property, method, ACCESS_READWRITE}} = require('@jellybrick/dbus-next');
 
 class TestInterface extends Interface {
   @property({signature: 's', access: ACCESS_READWRITE})

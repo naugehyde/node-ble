@@ -1,4 +1,4 @@
-const { Variant } = require('dbus-next')
+const { Variant } = require('@jellybrick/dbus-next')
 
 const isVariant = o => o instanceof Variant
 

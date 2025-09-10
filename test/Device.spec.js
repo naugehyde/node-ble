@@ -21,7 +21,7 @@ jest.mock('../src/GattServer')
 
 const dbus = Symbol('dbus')
 
-const { Variant } = require('dbus-next')
+const { Variant } = require('@jellybrick/dbus-next')
 const Device = require('../src/Device')
 const GattServer = require('../src/GattServer')
 

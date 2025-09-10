@@ -1,7 +1,7 @@
 {
   "name": "@naugehyde/node-ble",
   "description": "Bluetooth Low Energy (BLE) library written with pure Node.js (no bindings) - baked by Bluez via DBus with @JellyBrick fixes to Dbus-next" ,
-  "version": "1.13.2",
+  "version": "1.13.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/naugehyde/node-ble.git"

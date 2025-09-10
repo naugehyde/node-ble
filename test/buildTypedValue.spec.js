@@ -1,7 +1,7 @@
 /* global test, expect */
 
 const buildTypedValue = require('../src/buildTypedValue.js')
-const { Variant } = require('dbus-next')
+const { Variant } = require('@jellybrick/dbus-next')
 
 test('buildTypedValue', () => {
   expect(buildTypedValue('string', 'bar')).toEqual(new Variant('s', 'bar'))

@@ -1,4 +1,4 @@
-const { Variant } = require('dbus-next')
+const { Variant } = require('@jellybrick/dbus-next')
 
 function buildTypedValue (type, value) {
   const dbusType = MAPPINGS[type]
