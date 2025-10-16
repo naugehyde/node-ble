@@ -71,6 +71,15 @@ class Adapter {
     return this.helper.prop('Discovering')
   }
 
+   /**
+   * This method sets the adapter's powered state.
+   * @async
+   */
+  async setPowered (state) {
+    await this.helper.set('Powered', buildTypedValue('boolean', state))
+  }
+
+
   /**
    * This method starts the device discovery session.
    * @async
